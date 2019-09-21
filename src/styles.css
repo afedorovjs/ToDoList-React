@@ -1,0 +1,186 @@
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 20px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.wrapper {
+  width: 380px;
+  margin: 0 auto;
+  background-color: #FFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header {
+  background-image: url(./img/bg.jpg);
+  width: 380px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #FFF;
+  font-size: 27px;
+  font-family: 'Muli', sans-serif;
+  text-shadow: 1px 2px 4px #aaa;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.listWrapper {
+  font-family: 'Alegreya Sans', sans-serif;
+  width: 380px;
+  height: 350px;
+  max-height: 350px;
+  background-color: #FFF;
+  overflow: auto;
+}
+
+.listWrapper::-webkit-scrollbar { 
+  display: none; 
+}
+
+.firstTodo {
+  text-align: center;
+  font-size: 18px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.rm {
+  background: red;
+  border-radius: 20%;
+  color: white;
+  border: none;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.input {
+  height: 32px;
+  width: 280px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  padding: 5px 0px 0px 25px;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #4162f6;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
+.removeButton {
+  background-image: url(./img/trash.svg);
+  background-repeat: no-repeat;
+  border: none;
+  height: 26px;
+  width: 26px;
+  outline: none;
+}
+
+.removeButton:hover {
+  background-image: url(./img/trash-hovered.svg);
+  cursor: pointer;
+}
+
+.submitButton {
+  background-image: url(./img/add-button-icon.svg);
+  width: 32px;
+  height: 32px;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 5px 5px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
+
+.text {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 20px;
+  left: 50px;
+  top: 5px;
+  max-width: 285px;
+  vertical-align: middle;
+  user-select: none;
+}
+
+input[type="checkbox"] + span {
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 26px;
+  height: 35px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] + span {
+  background-image: url(./img/circle-outline.svg);
+}
+
+input[type="checkbox"]:checked + span {
+  background-image: url(./img/checked.svg);
+}
+
+input[type="checkbox"]:hover + span {
+  cursor: pointer;
+}
+
+.clearButton {
+  background-image: url(./img/refresh.svg);
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.clearButton:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
